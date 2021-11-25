@@ -1,0 +1,23 @@
+{
+  "name": "kellys-crochet-placeholder-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoojeenkim/Kellys-Crochet-Placeholder-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoojeenkim/Kellys-Crochet-Placeholder-App/issues"
+  },
+  "homepage": "https://github.com/yoojeenkim/Kellys-Crochet-Placeholder-App#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
