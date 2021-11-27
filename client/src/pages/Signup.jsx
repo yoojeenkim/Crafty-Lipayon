@@ -26,7 +26,7 @@ const Title = styled.h1`
 
 const Input = styled.input`
     flex: 1;
-    min-width: 40%auto;
+    min-width: 40%;
     margin: 20px 10px 0px 0px;
     padding: 10px;
 `;
@@ -49,18 +49,18 @@ const Signup = () => {
     return (
         <Container>
             <Wrapper>
-                <Title>CREATE AN ACCOUNT</Title>
+                <Title>Create your account</Title>
                 <Form>
-                    <Input placeholder="First Name" />
-                    <Input placeholder="Last Name" />
+                    <Input placeholder="First name" />
+                    <Input placeholder="Last name" />
                     <Input placeholder="Username" />
-                    <Input placeholder="Email" />
+                    <Input placeholder="Email address" />
                     <Input placeholder="Password" />
                     <Input placeholder="Confirm Password" />
                     <Agreement>
                         By creating an account, I consent to the processing of my personal data in accordance with the <b>PRIVACY POLICY</b>.
                     </Agreement>
-                    <Button>CREATE</Button>
+                    <Button>Register</Button>
                 </Form>
             </Wrapper>
         </Container>
