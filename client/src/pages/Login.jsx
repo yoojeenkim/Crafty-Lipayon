@@ -1,69 +1,75 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Container = styled.div`
-    width: 100vw;
-    height: 100vh;
-    
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://media-exp1.licdn.com/dms/image/C4D03AQGyz4UZeWuq-w/profile-displayphoto-shrink_800_800/0/1632332218933?e=1645056000&v=beta&t=cg_1UZOGAYNimxU7kF_gvgFexdtzOR8R03MPqf-9R8Y")
+      center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
-    width: 25%;
-    padding: 20px;
-`;
-
-const Form = styled.form`
-    display: flex;
-    flex-direction: column;
+  width: 25%;
+  padding: 20px;
+  background-color: white;
 `;
 
 const Title = styled.h1`
-    font-size: 24px;
-    font-weight: 300;
+  font-size: 24px;
+  font-weight: 300;
+`;
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
 `;
 
 const Input = styled.input`
-    flex: 1;
-    min-width: 40% auto;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 200px;
+  flex: 1;
+  min-width: 40%;
+  margin: 10px 0;
+  padding: 10px;
 `;
 
 const Button = styled.button`
-    width: 40%;
-    border: none;
-    padding: 15px 20px;
-    background-color: teal;
-    color: white;
-    cursor: pointer;
-    margin-bottom: 10px;
+  width: 40%;
+  border: none;
+  padding: 15px 20px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
 `;
 
 const Link = styled.a`
-    margin: 5px 0px;
-    font-size: 12px;
-    text-decoration: underline;
-    cursor: pointer;
+  margin: 5px 0px;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
 `;
 
 const Login = () => {
     return (
         <Container>
             <Wrapper>
-                <Title>Sign in</Title>
+                <Title>SIGN IN</Title>
                 <Form>
-                    <Input placeholder="Username" />
-                    <Input placeholder="Password" />
-                    <Button>Sign in</Button>
-                    <Link>Forgot your password?</Link>
-                    <Link>Register</Link>
+                    <Input placeholder="username" />
+                    <Input placeholder="password" />
+                    <Button>LOGIN</Button>
+                    <Link>DO NOT YOU REMEMBER YOUR OWN PASSWORD DUMMY?</Link>
+                    <Link>CREATE A NEW ACCOUNT</Link>
                 </Form>
             </Wrapper>
         </Container>
-    )
-}
+    );
+};
 
 export default Login;

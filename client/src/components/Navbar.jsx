@@ -1,6 +1,8 @@
 import { Badge } from '@material-ui/core';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
+import React from "react";
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     height: 60px;
@@ -16,6 +18,7 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
     flex: 1;
+    display: flex;
     align-items: center;
 `;
 
@@ -61,7 +64,9 @@ const Navbar = () => {
             <Container>
                 <Wrapper>
                     <Left>
+                        <Link to="/">
                         <Logo>CRAFTY LIPAYON</Logo>
+                        </Link>
                     </Left>
                     <Center>
                         <SearchContainer>
@@ -70,13 +75,19 @@ const Navbar = () => {
                         </SearchContainer>
                     </Center>
                     <Right>
+                        <Link to="/signup">
                         <MenuItem>Register</MenuItem>
+                        </Link>
+                        <Link to="/login">
                         <MenuItem>Sign in</MenuItem>
+                        </Link>
+                        <Link to="/cart">
                         <MenuItem>
                             <Badge color="primary">
                                 <ShoppingCartOutlined />
                             </Badge>
                         </MenuItem>
+                        </Link>
                     </Right>
                 </Wrapper>
             </Container>
